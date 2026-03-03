@@ -1,0 +1,26 @@
+import random
+
+
+playing = True
+roll = input('Roll the Dice?(Y/N): ').strip().lower()
+yes_input = ['yes', 'y']
+no_input = ['no', 'n']
+
+while True:
+    if roll in yes_input:
+        dice = random.randint(1,6)
+        dice_2 = random.randint(1,6)
+        print(f'You rolled: {dice},{dice_2}')
+
+        roll = input('Roll again? (Y/N): ').strip().lower()
+
+    elif roll in no_input:
+        print('Thanks for Playing')
+        break
+
+    else:
+        print("Invalid Output. Please Enter 'Y' or 'N'")
+        roll = input('Roll the Dice?(Y/N): ').strip().lower()
+
+
+

@@ -16,7 +16,7 @@ else:
     exit()
 
 #Breaker Size and Wiring Size 
-breaker_size = [15, 20, 25, 30, 50, 80, 100, 125]
+breaker_size = [10, 15, 20, 25, 30, 50, 80, 100, 125]
 
 recommended_breaker = None
 for size in breaker_size:
